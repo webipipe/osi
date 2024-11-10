@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <!-- Nombre del Cliente -->
+    <TextView
+        android:id="@+id/txtCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:textSize="16sp"
+        android:textColor="#333333" />
+
+    <!-- Modelo de Zapatilla -->
+    <TextView
+        android:id="@+id/txtModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modelo"
+        android:textSize="16sp"
+        android:textColor="#333333" />
+
+    <!-- Talla -->
+    <TextView
+        android:id="@+id/txtTalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Talla"
+        android:textSize="16sp"
+        android:textColor="#333333" />
+
+    <!-- Cantidad -->
+    <TextView
+        android:id="@+id/txtCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad"
+        android:textSize="16sp"
+        android:textColor="#333333" />
+
+    <!-- Precio -->
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:textSize="16sp"
+        android:textColor="#333333" />
+
+</LinearLayout>

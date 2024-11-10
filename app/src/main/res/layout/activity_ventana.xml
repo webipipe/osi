@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="376dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="128dp"
+        android:background="#2B2828"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="Zapatillas"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="Nombre"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:text="Talla"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Imagen"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Comprar"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Nike "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="43"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/nike2" />
+                <Button
+                    android:id="@+id/boton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickComprar"
+                    android:backgroundTint="@color/black"
+                    android:text="Comprar" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Arididas "
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="41.5"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ardidas" />
+                <Button
+                    android:id="@+id/boton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickComprar"
+                    android:backgroundTint="@color/black"
+                    android:text="Comprar" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="99dp"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/nike2"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Modelos"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="$60.000"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="390dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3.5"
+                android:stepSize="0.5" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nike " />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nike " />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nike " />
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nike " />
+
+            <CheckBox
+                android:id="@+id/checkbox6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nike " />
+
+            <CheckBox
+                android:id="@+id/checkbox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nike " />
+
+            <RadioButton
+                android:id="@+id/Cg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ardidas" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bienvenido A Vintage"
+        android:textSize="33sp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="14dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Botón para redirigir a activity_mapa -->
+
+    <Button
+        android:id="@+id/btn_donde_ubicacion"
+        android:layout_width="216dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/black"
+        android:onClick="irAMapa"
+        android:text="Donde Estamos Ubicados"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintVertical_bias="0.273" />
+    <Button
+        android:id="@+id/btn_ver_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximamente"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_crud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:id="@+id/btn_crud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:onClick="irCrud"
+        android:text="Pedido Especial "
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintVertical_bias="0.273" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

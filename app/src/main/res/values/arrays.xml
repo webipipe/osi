@@ -1,0 +1,15 @@
+<!-- res/values/arrays.xml -->
+<resources>
+    <string-array name="tallas_zapatillas">
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+    </string-array>
+</resources>
